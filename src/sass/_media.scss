@@ -1,11 +1,15 @@
 @media (max-width: 991px) {
   .header {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   .promo__wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .consultation {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -75,6 +79,36 @@
     // .benefits__review
     &__review {
       width: 75%;
+    }
+  }
+  .consultation {
+    &__header {
+      font-size: 26px;
+      line-height: 45px;
+    }
+  }
+}
+@media (max-width: 374px) {
+  .feed-form {
+    width: 280px;
+  }
+  .consultation {
+    &__header {
+      font-size: 25px;
+      line-height: 37px;
+    }
+  }
+  .button__main {
+    width: 280px;
+  }
+  .promo {
+    &__header {
+      font-size: 32px;
+    }
+  }
+  .promo {
+    &__subheader {
+      font-size: 17px;
     }
   }
 }
