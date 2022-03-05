@@ -33,24 +33,23 @@
     div {
       transform: skewX(25deg);
     }
-  }
-  &--active {
-    background-color: $b-color;
-    color: $text-color;
-    border: none;
+    &--active {
+      background-color: $b-color;
+      color: $text-color;
+      border: none;
+    }
   }
   // .catalog__content
   &__content {
     margin-top: 60px;
-  }
-  .catalog {
-    // .catalog__content
-    &__content {
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__active {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
     }
   }
+
   .catalog--item {
     position: relative;
     width: 303px;
@@ -59,6 +58,7 @@
     border: 2px solid #d0d0d0;
     overflow: hidden;
     margin-bottom: 20px;
+    transition: 0.5s all ease;
 
     // .catalog--item__img
     &__img {
@@ -94,6 +94,7 @@
       line-height: 14px;
       text-align: center;
       text-decoration-line: underline;
+      text-transform: uppercase;
       color: $b-color;
       &:hover {
         color: $b-color;
@@ -140,7 +141,7 @@
       width: 50%;
       margin-right: 0px;
       transform: translate(-100%);
-      transition: 0.5 all ease;
+      transition: 0.5s all ease;
       &__active {
         transform: translateX(0%);
         margin-right: 20px;
@@ -151,7 +152,7 @@
       margin-left: 20px;
       transform: translate(0%);
       padding-right: 20px;
-      transition: 0.5 all ease;
+      transition: 0.5s all ease;
       margin-bottom: 0;
       padding-left: 19px;
       list-style-type: none;
@@ -189,6 +190,7 @@
       line-height: 14px;
       text-align: center;
       text-decoration-line: underline;
+      text-transform: uppercase;
       color: $b-color;
       &:hover {
         color: $b-color;
