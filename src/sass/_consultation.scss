@@ -18,4 +18,14 @@
     line-height: 30px;
     color: $text-color;
   }
+  .error {
+    text-align: center;
+    border: 1px solid red;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  label.error {
+    color: #fff;
+    border: none;
+  }
 }
